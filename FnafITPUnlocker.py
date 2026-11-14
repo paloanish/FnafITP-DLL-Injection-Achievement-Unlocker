@@ -5,7 +5,7 @@ UNLOCK_FILE = os.path.join(os.getcwd(), "unlock.txt")
 
 # The exact backend keys required by the bridge
 ACHIEVEMENTS = [
-    "LOOKING_TO_THE_FUTURE", "INTO_THE_PIT", "ITS_ME", "I_HEAR_YOU",
+    "INTO_THE_PIT", "ITS_ME", "I_HEAR_YOU",
     "BIG_KID", "TODDLER", "BABY", "LET_THERE_BE_LIGHT",
     "THE_LIGHT_OF_87", "NIGHT_VISION", "A_MASTER_OF_STEALTH",
     "GOOOAL", "JINXS_FAVORITE", "CHICAS_PARTY", "ROCK_AND_ROLL_BONNIE",
