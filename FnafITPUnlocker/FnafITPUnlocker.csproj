@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+    <!-- REPLACE THIS PATH WITH YOUR ACTUAL EPIC GAMES FNAF ITP INSTALLATION PATH -->
+    <!-- eg: <GamePath>C:\Program Files\Epic Games\FiveNightsatFreddysICCsjt</GamePath> -->
+
+    <GamePath>D:\Epic Games\FiveNightsatFreddysICCsjt</GamePath>
+  
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(GamePath)\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+
+      <!-- REPLACE THIS PATH WITH YOUR ACTUAL Assembly-CSharp.dll PATH -->
+      <!-- FOR ME, \FNaFIntoThePit_Data\Managed\Assembly-CSharp.dll IS THE PATH -->
+
+      <HintPath>$(GamePath)\FNaFIntoThePit_Data\Managed\Assembly-CSharp.dll</HintPath>
+
+    </Reference>
+    <Reference Include="UnityEngine">
+
+      <!-- REPLACE THIS PATH WITH YOUR ACTUAL UnityEngine.dll PATH -->
+      <!-- FOR ME, \FNaFIntoThePit_Data\Managed\UnityEngine.dll IS THE PATH -->
+
+      <HintPath>$(GamePath)\FNaFIntoThePit_Data\Managed\UnityEngine.dll</HintPath>
+
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+
+      <!-- REPLACE THIS PATH WITH YOUR ACTUAL UnityEngine.CoreModule.dll PATH -->
+      <!-- FOR ME, \FNaFIntoThePit_Data\Managed\UnityEngine.CoreModule.dll IS THE PATH -->
+
+      <HintPath>$(GamePath)\FNaFIntoThePit_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+
+    </Reference>
+  </ItemGroup>
+</Project>
